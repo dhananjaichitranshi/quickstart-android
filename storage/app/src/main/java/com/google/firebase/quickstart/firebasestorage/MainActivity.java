@@ -241,6 +241,7 @@ public class MainActivity extends AppCompatActivity implements
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, mFileUri);
 
+        System.out.println("hahaha");
         startActivityForResult(takePictureIntent, RC_TAKE_PICTURE);
     }
 
